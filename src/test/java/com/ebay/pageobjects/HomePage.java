@@ -31,6 +31,12 @@ public class HomePage extends AbstractPage {
     @FindBy(xpath = "(//div[@class='widget-currency_bank']//tbody//tr[3]//span)[5]")
     private WebElement stringSaleRub;
 
+    @FindBy(css = "#currency_amount")
+    private WebElement convertorInput;
+
+    @FindBy(css="#currency_exchange")
+    private WebElement getConvertorResult;
+
     private double saleUsd = Double.parseDouble(stringSaleUsd.getText());
     private double buyUsd = Double.parseDouble(stringBuyUsd.getText());
 
