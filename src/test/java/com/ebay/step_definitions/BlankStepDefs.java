@@ -3,6 +3,7 @@ package com.ebay.step_definitions;
 import static org.testng.AssertJUnit.assertEquals;
 
 import com.ebay.pageobjects.HomePage;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import cucumber.api.java.en.Then;
@@ -18,27 +19,29 @@ public class BlankStepDefs{
 
     @When("^I open finance website$")
     public void i_open_finance_website() throws Throwable {
-        System.out.println(homePage.currencyUsdDif());
+assertEquals("Курс валют и конвертер валют: курс доллара, курс евро и курс рубля в обменниках украинских банков",homePage.getTitle());
+
+
+    }
+    @Then("^I validate sale price is greater than buy for USD$")
+    public void i_validate_sale_price_is_greater_than_buy_for_USD() throws Throwable {
+        assertEquals(homePage.getSaleUsd()>homePage.getBuyUsd(),true);
+
 
     }
 
-    @Then("^I validate the difarance between buy and sale USD$")
-    public void i_validate_the_difarance_between_buy_and_sale_USD() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
+    @Then("^I validate sale price is greater than buy for EUR$")
+    public void i_validate_sale_price_is_greater_than_buy_for_EUR() throws Throwable {
+        assertEquals(homePage.getSaleEur()>homePage.getBuyEur(),true);
 
     }
 
-    @Then("^I validate the difarance between buy and sale EUR$")
-    public void i_validate_the_difarance_between_buy_and_sale_EUR() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
+    @Then("^I validate sale price is greater than buy for RUB$")
+    public void i_validate_sale_price_is_greater_than_buy_for_RUB() throws Throwable {
+        assertEquals(homePage.getSaleRub()>homePage.getBuyRub(),true);
 
     }
 
-    @Then("^I validate the difarance between buy and sale RUB$")
-    public void i_validate_the_difarance_between_buy_and_sale_RUB() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-
-    }
 
 
 }
