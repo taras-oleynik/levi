@@ -73,7 +73,12 @@ public class HomePage extends AbstractPage {
     public double convertDollarToHryvnia(String  valueInDollar ){
 
         convertorInput.sendKeys(valueInDollar);
-        double hryvniaResult=Double.parseDouble(getConvertorResult.getText());
+        double hryvniaResult=Double.parseDouble(getConvertorResult.getAttribute("value").replaceAll("\\s+",""));
+        return hryvniaResult;
+    }
+
+    public double usdToHryvniaCalc(String valueInDollar){
+        double hryvniaResult=Double.parseDouble(valueInDollar)*buyUsd;
         return hryvniaResult;
     }
 

@@ -49,7 +49,9 @@ public class BlankStepDefs {
 
     @Then("^I can validate that \"([^\"]*)\" in dollars sum in hryvnia is correct$")
     public void i_can_validate_that_in_dollars_sum_in_hryvnia_is_correct(String arg1) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
+        System.out.println(homePage.convertDollarToHryvnia(arg1));
+        System.out.println(homePage.usdToHryvniaCalc(arg1));
+       assertEquals("The sum in converter does not equal to multiplication buy value to hrivnya sum",homePage.convertDollarToHryvnia(arg1),homePage.usdToHryvniaCalc(arg1),0.01); // Write code here that turns the phrase above into concrete actions
 
     }
 
