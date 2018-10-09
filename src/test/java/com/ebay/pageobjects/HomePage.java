@@ -34,7 +34,7 @@ public class HomePage extends AbstractPage {
     @FindBy(css = "#currency_amount")
     private WebElement convertorInput;
 
-    @FindBy(css="#currency_exchange")
+    @FindBy(css = "#currency_exchange")
     private WebElement getConvertorResult;
 
     private double saleUsd = Double.parseDouble(stringSaleUsd.getText());
@@ -45,8 +45,6 @@ public class HomePage extends AbstractPage {
 
     private double saleRub = Double.parseDouble(stringSaleRub.getText());
     private double buyRub = Double.parseDouble(stringBuyRub.getText());
-
-
 
 
     public double currencyUsdDif() {
@@ -71,6 +69,14 @@ public class HomePage extends AbstractPage {
         return getDriver().getTitle();
 
     }
+
+    public double convertDollarToHryvnia(String  valueInDollar ){
+
+        convertorInput.sendKeys(valueInDollar);
+        double hryvniaResult=Double.parseDouble(getConvertorResult.getText());
+        return hryvniaResult;
+    }
+
     public double getSaleUsd() {
         return saleUsd;
     }
