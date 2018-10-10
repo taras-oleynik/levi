@@ -2,6 +2,8 @@ package com.ebay.pageobjects;
 
 
 import com.ebay.servise.WebDriverFactory;
+import cucumber.api.java.it.Ma;
+import org.apache.commons.lang3.math.NumberUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,7 +36,7 @@ public class HomePage extends AbstractPage {
     @FindBy(css = "#currency_amount")
     private WebElement convertorInput;
 
-    @FindBy(css = "#currency_exchange")
+    @FindBy(css = "#UAH #currency_exchange")
     private WebElement getConvertorResult;
 
     private double saleUsd = Double.parseDouble(stringSaleUsd.getText());
@@ -70,11 +72,22 @@ public class HomePage extends AbstractPage {
 
     }
 
-    public double convertDollarToHryvnia(String  valueInDollar ){
+    public double convertDollarToHryvnia(String  valueInDollar ) throws InterruptedException {
 
         convertorInput.sendKeys(valueInDollar);
-        double hryvniaResult=Double.parseDouble(getConvertorResult.getAttribute("value").replaceAll("\\s+",""));
-        return hryvniaResult;
+
+        System.out.println("Start-------Before parse");
+        String test = getConvertorResult.getAttribute("value").replaceAll("\\s","");
+        //System.out.println(test.replaceAll("\\s",""));
+        System.out.println("start parse-------");
+        System.out.println (Double.valueOf(test) );
+        System.out.println("Finish parse -------");
+        double hryvniaResult=Double.parseDouble(test.replaceAll("\\s+",""));
+        // hryvniaResult = Math.round(hryvniaResult*100.0)/100.0;
+        //System.out.println("the result after the round decimal"+ hryvniaResult);
+         return hryvniaResult;
+
+
     }
 
     public double usdToHryvniaCalc(String valueInDollar){
