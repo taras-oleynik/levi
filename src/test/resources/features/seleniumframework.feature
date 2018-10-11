@@ -7,7 +7,10 @@ Feature: Access to finance web site
     Then I validate sale price is greater than buy for EUR
     Then I validate sale price is greater than buy for RUB
 
-Scenario:
-  Given I open finance website
-  Then I can validate that "1000" in dollars sum in hryvnia is correct
+  Scenario:
+    Given I open finance website
+    Then I can validate that "1000" in dollars sum in hryvnia is correct
 
+  Scenario:
+    Given I open finance website
+    Then I want to buy EUR and validate that "1000" EUR sum in hryvnia is correct

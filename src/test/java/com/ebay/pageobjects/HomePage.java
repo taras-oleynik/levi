@@ -7,6 +7,7 @@ import org.apache.commons.lang3.math.NumberUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 import static com.ebay.servise.WebDriverFactory.getDriver;
 
@@ -38,6 +39,11 @@ public class HomePage extends AbstractPage {
 
     @FindBy(css = "#UAH #currency_exchange")
     private WebElement getConvertorResult;
+
+    @FindBy(css = "#buy a")
+    private WebElement buyButton;
+    @FindBy(css = "select#converter_currency")
+    private WebElement converterCurrencySelector;
 
     private double saleUsd = Double.parseDouble(stringSaleUsd.getText());
     private double buyUsd = Double.parseDouble(stringBuyUsd.getText());
@@ -87,6 +93,17 @@ public class HomePage extends AbstractPage {
     public double usdToHryvniaCalc(String valueInDollar) {
         double hryvniaResult = Double.parseDouble(valueInDollar) * buyUsd;
         return hryvniaResult;
+    }
+
+    public void clickonBuyButton() {
+        buyButton.click();
+
+    }
+
+    public void selectFromDrobDown() {
+
+        Select drobDown = new Select(converterCurrencySelector);
+        drobDown.selectByVisibleText("EUR");
     }
 
     public double getSaleUsd() {

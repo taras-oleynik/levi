@@ -41,21 +41,21 @@ public class BlankStepDefs {
     }
 
 
-  /*  @When("^I enter \"([^\"]*)\" of Dollars$")
-    public void i_enter_of_Dollars(String arg1) throws Throwable {
-        homePage.convertDollarToHryvnia(arg1);
-
-    }*/
-
     @Then("^I can validate that \"([^\"]*)\" in dollars sum in hryvnia is correct$")
     public void i_can_validate_that_in_dollars_sum_in_hryvnia_is_correct(String arg1) throws Throwable {
 
 
-        double expected = homePage.usdToHryvniaCalc(arg1);
+        double expected = Math.round((homePage.usdToHryvniaCalc(arg1)) * 100.0) / 100.0;
         double actual = homePage.convertDollarToHryvnia(arg1);
 
         assertEquals("The sum in converter does not equal to multiplication buy value to hrivnya sum", expected, actual);
 
+    }
+
+    @Then("^I want to buy EUR and validate that \"([^\"]*)\" EUR sum in hryvnia is correct$")
+    public void i_want_to_buy_EUR_and_validate_that_EUR_sum_in_hryvnia_is_correct(String arg1) throws Throwable {
+        homePage.clickonBuyButton();
+        homePage.selectFromDrobDown();
     }
 
 
