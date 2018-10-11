@@ -72,26 +72,20 @@ public class HomePage extends AbstractPage {
 
     }
 
-    public double convertDollarToHryvnia(String  valueInDollar ) throws InterruptedException {
-
+    public double convertDollarToHryvnia(String valueInDollar) {
+        double hryvniaResult;
         convertorInput.sendKeys(valueInDollar);
 
-        System.out.println("Start-------Before parse");
-        String test = getConvertorResult.getAttribute("value").replaceAll("\\s","");
-        //System.out.println(test.replaceAll("\\s",""));
-        System.out.println("start parse-------");
-        System.out.println (Double.valueOf(test) );
-        System.out.println("Finish parse -------");
-        double hryvniaResult=Double.parseDouble(test.replaceAll("\\s+",""));
-        // hryvniaResult = Math.round(hryvniaResult*100.0)/100.0;
-        //System.out.println("the result after the round decimal"+ hryvniaResult);
-         return hryvniaResult;
+        String convertorResult = getConvertorResult.getAttribute("value").replaceAll("\\s", "");
+
+
+        return hryvniaResult = Double.parseDouble(convertorResult);
 
 
     }
 
-    public double usdToHryvniaCalc(String valueInDollar){
-        double hryvniaResult=Double.parseDouble(valueInDollar)*buyUsd;
+    public double usdToHryvniaCalc(String valueInDollar) {
+        double hryvniaResult = Double.parseDouble(valueInDollar) * buyUsd;
         return hryvniaResult;
     }
 

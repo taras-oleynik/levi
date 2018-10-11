@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c89d304-c082-4269-990f-abc99001b7e3" name="Default" comment="converter method, double parse">
+    <list default="true" id="8c89d304-c082-4269-990f-abc99001b7e3" name="Default" comment="converter method, double parse new adds">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ebay/pageobjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ebay/pageobjects/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ebay/step_definitions/BlankStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ebay/step_definitions/BlankStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/seleniumframework.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/seleniumframework.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,16 +26,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="feature" value="190" />
-          <entry key="java" value="1093" />
-          <entry key="txt" value="63" />
+          <entry key="feature" value="206" />
+          <entry key="java" value="1259" />
+          <entry key="txt" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Cucumber" value="190" />
-          <entry key="JAVA" value="1093" />
-          <entry key="PLAIN_TEXT" value="63" />
+          <entry key="Cucumber" value="206" />
+          <entry key="JAVA" value="1259" />
+          <entry key="PLAIN_TEXT" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -55,11 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ebay/pageobjects/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="93" column="28" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="28" />
+            <state relative-caret-position="187">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/seleniumframework.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -97,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ebay/step_definitions/BlankStepDefs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="53" column="121" selection-start-line="53" selection-start-column="121" selection-end-line="53" selection-end-column="121" />
+            <state relative-caret-position="935">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,8 +170,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ebay/step_definitions/Hooks.java" />
         <option value="$PROJECT_DIR$/target/test-classes/features/seleniumframework.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/ebay/servise/WebDriverFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/seleniumframework.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/ebay/pageobjects/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/seleniumframework.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/ebay/step_definitions/BlankStepDefs.java" />
       </list>
     </option>
@@ -182,11 +183,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1927" />
+    <option name="y" value="2" />
+    <option name="width" value="1934" />
+    <option name="height" value="882" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -282,7 +283,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539174275650" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539262754638" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -322,6 +323,25 @@
       <module name="ebay-project" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
       <option name="SUGGESTED_NAME" value="Feature: seleniumframework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/seleniumframework.feature" />
+      <option name="GLUE" value="com.ebay.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="ebay-project" />
+      <option name="NAME_FILTER" value="^$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -386,10 +406,12 @@
     <list>
       <item itemvalue="JUnit.RunCukesTest" />
       <item itemvalue="Cucumber java.Feature: seleniumframework" />
+      <item itemvalue="Cucumber java.Scenario: " />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber java.Feature: seleniumframework" />
+        <item itemvalue="Cucumber java.Scenario: " />
         <item itemvalue="JUnit.RunCukesTest" />
       </list>
     </recent_temporary>
@@ -447,46 +469,53 @@
       <option name="project" value="LOCAL" />
       <updated>1539097191252</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="converter method, double parse new adds">
+      <created>1539184099794</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1539184099794</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__seleniumframework - 2018.10.10 at 13h 36m 22s.xml">
+    <history-entry file="Scenario__ - 2018.10.11 at 15h 27m 57s.xml">
+      <configuration name="Scenario: " configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__seleniumframework - 2018.10.11 at 15h 28m 33s.xml">
       <configuration name="Feature: seleniumframework" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__seleniumframework - 2018.10.10 at 13h 40m 19s.xml">
+    <history-entry file="Feature__seleniumframework - 2018.10.11 at 15h 30m 18s.xml">
       <configuration name="Feature: seleniumframework" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__seleniumframework - 2018.10.10 at 13h 40m 59s.xml">
+    <history-entry file="Feature__seleniumframework - 2018.10.11 at 15h 31m 11s.xml">
       <configuration name="Feature: seleniumframework" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__seleniumframework - 2018.10.10 at 13h 46m 24s.xml">
+    <history-entry file="Feature__seleniumframework - 2018.10.11 at 15h 33m 34s.xml">
       <configuration name="Feature: seleniumframework" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__seleniumframework - 2018.10.10 at 13h 50m 50s.xml">
+    <history-entry file="Feature__seleniumframework - 2018.10.11 at 15h 34m 50s.xml">
       <configuration name="Feature: seleniumframework" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__seleniumframework - 2018.10.10 at 13h 51m 21s.xml">
+    <history-entry file="Feature__seleniumframework - 2018.10.11 at 15h 35m 30s.xml">
       <configuration name="Feature: seleniumframework" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__seleniumframework - 2018.10.10 at 13h 53m 19s.xml">
+    <history-entry file="Feature__seleniumframework - 2018.10.11 at 15h 38m 09s.xml">
       <configuration name="Feature: seleniumframework" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__seleniumframework - 2018.10.10 at 13h 53m 54s.xml">
+    <history-entry file="Feature__seleniumframework - 2018.10.11 at 15h 54m 55s.xml">
       <configuration name="Feature: seleniumframework" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__seleniumframework - 2018.10.10 at 13h 56m 47s.xml">
-      <configuration name="Feature: seleniumframework" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__seleniumframework - 2018.10.10 at 13h 58m 39s.xml">
+    <history-entry file="Feature__seleniumframework - 2018.10.11 at 15h 55m 40s.xml">
       <configuration name="Feature: seleniumframework" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1927" y="2" width="1934" height="882" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21588486" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21611527" />
       <window_info id="Structure" order="1" weight="0.24962178" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -495,7 +524,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5075922" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4064171" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5943601" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -503,7 +532,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3275488" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3275401" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -523,31 +552,8 @@
     <MESSAGE value="converter start" />
     <MESSAGE value="converter method" />
     <MESSAGE value="converter method, double parse" />
-    <option name="LAST_COMMIT_MESSAGE" value="converter method, double parse" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/ebay/pageobjects/HomePage.java</url>
-          <line>79</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/ebay/pageobjects/HomePage.java</url>
-          <line>80</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/ebay/pageobjects/HomePage.java</url>
-          <line>82</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="converter method, double parse new adds" />
+    <option name="LAST_COMMIT_MESSAGE" value="converter method, double parse new adds" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -780,30 +786,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/seleniumframework.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ebay/pageobjects/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        <state relative-caret-position="187">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ebay/step_definitions/BlankStepDefs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="53" column="121" selection-start-line="53" selection-start-column="121" selection-end-line="53" selection-end-column="121" />
+        <state relative-caret-position="935">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ebay/pageobjects/HomePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/seleniumframework.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="93" column="28" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>

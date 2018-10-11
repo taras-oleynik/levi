@@ -1,4 +1,4 @@
-Feature: Access to ebay web site
+Feature: Access to finance web site
   Use selenium java with cucumber-jvm and navigate to website
 
   Scenario: Navigate to landing page
@@ -9,6 +9,5 @@ Feature: Access to ebay web site
 
 Scenario:
   Given I open finance website
-  When I enter "1000" of Dollars
   Then I can validate that "1000" in dollars sum in hryvnia is correct
 

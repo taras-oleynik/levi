@@ -41,18 +41,20 @@ public class BlankStepDefs {
     }
 
 
-    @When("^I enter \"([^\"]*)\" of Dollars$")
+  /*  @When("^I enter \"([^\"]*)\" of Dollars$")
     public void i_enter_of_Dollars(String arg1) throws Throwable {
         homePage.convertDollarToHryvnia(arg1);
 
-    }
+    }*/
 
     @Then("^I can validate that \"([^\"]*)\" in dollars sum in hryvnia is correct$")
     public void i_can_validate_that_in_dollars_sum_in_hryvnia_is_correct(String arg1) throws Throwable {
-      //  System.out.println(homePage.convertDollarToHryvnia(arg1));
-       // System.out.println(homePage.usdToHryvniaCalc(arg1));
-       assertEquals("The sum in converter does not equal to multiplication buy value to hrivnya sum",homePage.usdToHryvniaCalc(arg1),homePage.convertDollarToHryvnia(arg1)
-               ,0.1); // Write code here that turns the phrase above into concrete actions
+
+
+        double expected = homePage.usdToHryvniaCalc(arg1);
+        double actual = homePage.convertDollarToHryvnia(arg1);
+
+        assertEquals("The sum in converter does not equal to multiplication buy value to hrivnya sum", expected, actual);
 
     }
 
