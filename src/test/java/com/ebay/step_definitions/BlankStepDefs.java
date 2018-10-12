@@ -56,6 +56,13 @@ public class BlankStepDefs {
     public void i_want_to_buy_EUR_and_validate_that_EUR_sum_in_hryvnia_is_correct(String arg1) throws Throwable {
         homePage.clickonBuyButton();
         homePage.selectFromDrobDown();
+        double expected = Math.round((homePage.eurToHryvniaCalc(arg1)) * 100.0) / 100.0;
+        double actual = homePage.convertDollarToHryvnia(arg1);
+
+
+        assertEquals("The sum in converter does not equal to multiplication buy value to hrivnya sum", expected, actual);
+
+
     }
 
 

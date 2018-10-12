@@ -83,7 +83,19 @@ public class HomePage extends AbstractPage {
         convertorInput.sendKeys(valueInDollar);
 
         String convertorResult = getConvertorResult.getAttribute("value").replaceAll("\\s", "");
+        //System.out.println("for dollar: "+convertorResult);
 
+        return hryvniaResult = Double.parseDouble(convertorResult);
+
+
+    }
+
+    public double convertEuroToHryvnia(String valueInEuro) {
+        double hryvniaResult;
+        convertorInput.sendKeys(valueInEuro);
+
+        String convertorResult = getConvertorResult.getAttribute("value").replaceAll("\\s", "");
+      //  System.out.println("for euro: "+convertorResult);
 
         return hryvniaResult = Double.parseDouble(convertorResult);
 
@@ -92,6 +104,11 @@ public class HomePage extends AbstractPage {
 
     public double usdToHryvniaCalc(String valueInDollar) {
         double hryvniaResult = Double.parseDouble(valueInDollar) * buyUsd;
+        return hryvniaResult;
+    }
+
+    public double eurToHryvniaCalc(String valueInEur) {
+        double hryvniaResult = Double.parseDouble(valueInEur) * saleEur;
         return hryvniaResult;
     }
 
