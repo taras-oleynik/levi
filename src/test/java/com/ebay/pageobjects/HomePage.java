@@ -103,21 +103,41 @@ public class HomePage extends AbstractPage {
     }
 
     public double usdToHryvniaCalc(String valueInDollar) {
+        try{
+            getDriver().switchTo().alert().accept();
+        }catch(Exception e){
+            System.out.println("unexpected pop up not present");
+        }
         double hryvniaResult = Double.parseDouble(valueInDollar) * buyUsd;
         return hryvniaResult;
     }
 
     public double eurToHryvniaCalc(String valueInEur) {
+        try{
+            getDriver().switchTo().alert().accept();
+        }catch(Exception e){
+            System.out.println("unexpected pop up not present");
+        }
         double hryvniaResult = Double.parseDouble(valueInEur) * saleEur;
         return hryvniaResult;
     }
 
     public void clickonBuyButton() {
+        try{
+            getDriver().switchTo().alert().accept();
+        }catch(Exception e){
+            System.out.println("unexpected pop up not present");
+        }
         buyButton.click();
 
     }
 
     public void selectFromDrobDown() {
+        try{
+            getDriver().switchTo().alert().accept();
+        }catch(Exception e){
+            System.out.println("unexpected pop up not present");
+        }
 
         Select drobDown = new Select(converterCurrencySelector);
         drobDown.selectByVisibleText("EUR");
