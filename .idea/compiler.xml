@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cucumber-java-template" />
-        <module name="ebay-project" />
+        <module name="levi-project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cucumber-java-template" target="1.5" />
-      <module name="ebay-project" target="1.5" />
+      <module name="levi-project" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
